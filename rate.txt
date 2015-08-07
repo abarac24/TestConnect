@@ -1,0 +1,23 @@
+75
+110
+134
+150
+200
+300
+600
+1200
+1800
+2400
+4800
+9600
+19200
+38400
+57600
+115200
+
+self.telnet = TelnetController.TelnetController(host_name = ip.strip(), user_name = 'admin', password = 'admin', prompt = '#')
+self.telnet.login()
+for rate in (75,110,134,150,200,300,600,1200,1800,2400,4800,9600,19200,38400,57600,115200):
+
+CLI#
+CLI# set serial data1 baudrate 9600
